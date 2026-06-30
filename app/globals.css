@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    @apply bg-white text-slate-900 font-sans;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display tracking-tight;
+  }
+  /* Smooth scroll for anchor jumps */
+  html { scroll-behavior: smooth; }
+  ::selection { background: theme('colors.brand.200'); color: theme('colors.brand.900'); }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-semibold transition focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+  .btn-primary {
+    @apply btn text-white focus:ring-brand-500;
+    background-image: linear-gradient(135deg, #3563ff 0%, #1f44f5 60%, #1a35d8 100%);
+    box-shadow: 0 0 0 1px rgba(31,68,245,0.10), 0 20px 60px -20px rgba(31,68,245,0.45);
+  }
+  .btn-primary:hover {
+    background-image: linear-gradient(135deg, #1f44f5 0%, #1a35d8 60%, #1c2eae 100%);
+    transform: translateY(-1px);
+  }
+  .btn-secondary {
+    @apply btn bg-white text-slate-900 border border-slate-200 hover:border-brand-300 hover:bg-brand-50/40 focus:ring-slate-300 shadow-sm;
+  }
+  .btn-ghost {
+    @apply btn px-3 py-2 text-slate-700 hover:bg-slate-100 focus:ring-slate-300;
+  }
+  .btn-danger {
+    @apply btn bg-red-600 text-white hover:bg-red-700 focus:ring-red-500;
+  }
+  .input {
+    @apply w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:border-brand-500 focus:outline-none focus:ring-4 focus:ring-brand-100;
+  }
+  .badge {
+    @apply inline-flex items-center rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-medium text-slate-700;
+  }
+  .badge-brand {
+    @apply inline-flex items-center rounded-full bg-brand-50 px-3 py-1 text-xs font-medium text-brand-700 ring-1 ring-inset ring-brand-200/60;
+  }
+  .badge-sky {
+    @apply inline-flex items-center rounded-full bg-sky-50 px-2.5 py-0.5 text-xs font-medium text-sky-700 ring-1 ring-inset ring-sky-200/60;
+  }
+  .card {
+    @apply rounded-2xl bg-white shadow-card border border-slate-100;
+  }
+  .card-glass {
+    @apply rounded-2xl border border-white/60 bg-white/70 shadow-card backdrop-blur-xl;
+  }
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(120deg, #1a35d8 0%, #3563ff 40%, #066bcb 100%);
+  }
+  .section-title-eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.18em] text-brand-700;
+  }
+}
+
+@layer utilities {
+  /* Soft animated halo blob — use in a relatively-positioned parent */
+  .blob {
+    @apply pointer-events-none absolute rounded-full opacity-70 blur-3xl;
+    will-change: transform;
+  }
+  .blob-brand {
+    background: radial-gradient(circle at 30% 30%, #5b8aff 0%, #1f44f5 45%, transparent 70%);
+  }
+  .blob-sky {
+    background: radial-gradient(circle at 30% 30%, #7fc1fc 0%, #066bcb 50%, transparent 75%);
+  }
+  .blob-navy {
+    background: radial-gradient(circle at 30% 30%, #6c87b6 0%, #1d2842 50%, transparent 75%);
+  }
+  /* Subtle 3D card lift */
+  .lift {
+    transition: transform 350ms cubic-bezier(.2,.7,.2,1), box-shadow 350ms cubic-bezier(.2,.7,.2,1);
+  }
+  .lift:hover {
+    transform: translateY(-4px);
+  }
+  /* Shiny line under text — used for "Trusted by" eyebrow */
+  .shimmer-text {
+    background: linear-gradient(110deg, theme('colors.slate.500') 40%, theme('colors.brand.500') 50%, theme('colors.slate.500') 60%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shimmer 4s linear infinite;
+  }
+  /* Grid overlay */
+  .pattern-dots {
+    background-image: radial-gradient(circle at 1px 1px, rgba(31,68,245,0.12) 1px, transparent 0);
+    background-size: 22px 22px;
+  }
+  .pattern-grid {
+    background-image:
+      linear-gradient(rgba(31,68,245,0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(31,68,245,0.06) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+}
