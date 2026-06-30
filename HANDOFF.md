@@ -1,5 +1,12 @@
 # Codern — Project Handoff & Repurposing Guide
 
+> **Live URLs**
+> - Production (Vercel): https://courses-platform-steel.vercel.app
+> - Custom domain (pending DNS): https://codern.benosh.tech — needs `A codern → 76.76.21.21` at the get.tech registrar
+> - GitHub: https://github.com/BenoshAntonyBenoy/codern — `main` auto-deploys to Vercel
+> - Vercel project: `benosh/courses-platform`
+
+
 > **AI editor (Claude / ChatGPT / anything else): READ THIS WHOLE FILE before making any changes.**
 > This document is self-contained. You can repurpose this project into a completely different e-commerce vertical (phones, ebooks, tickets, courses, anything) using only what's in this file — no further context needed.
 
