@@ -20,9 +20,125 @@ export const siteContent = {
   nav: [
     { label: "Home", href: "/" },
     { label: "Browse courses", href: "/courses" },
-    { label: "For teams", href: "/courses?audience=teams" },
-    { label: "Pricing", href: "/courses" },
+    { label: "For teams", href: "/teams" },
+    { label: "Pricing", href: "/pricing" },
   ],
+
+  pricing: {
+    eyebrow: "Pricing",
+    title: "Pay once. Own it forever.",
+    subtitle:
+      "No subscriptions. No hidden fees. Every plan gets lifetime access and free updates.",
+    tiers: [
+      {
+        name: "Personal",
+        priceUsd: 89,
+        cadence: "per course",
+        description:
+          "For solo learners who buy courses one at a time.",
+        features: [
+          "Lifetime access to any course you buy",
+          "Certificate of completion",
+          "Access on web, mobile, and offline",
+          "30-day money-back guarantee",
+        ],
+        cta: { label: "Browse courses", href: "/courses" },
+        featured: false,
+      },
+      {
+        name: "All-access",
+        priceUsd: 249,
+        cadence: "per year",
+        description:
+          "Unlock the entire catalogue with one annual pass.",
+        features: [
+          "Every current and future course",
+          "Priority mentor Q&A",
+          "Verified graduate portfolio review",
+          "Early access to new tracks",
+          "Downloadable source code + assets",
+        ],
+        cta: { label: "Get All-access", href: "/courses" },
+        featured: true,
+      },
+      {
+        name: "Team",
+        priceUsd: 29,
+        cadence: "per seat / month",
+        description:
+          "For engineering teams levelling up together.",
+        features: [
+          "5-seat minimum, volume discounts at 25+",
+          "Team dashboard & progress reports",
+          "Custom learning paths",
+          "SSO / SAML on request",
+          "Dedicated success manager",
+        ],
+        cta: { label: "Contact sales", href: "/teams" },
+        featured: false,
+      },
+    ],
+    faqs: [
+      {
+        q: "Do I need a subscription?",
+        a: "No. Personal plans are pay-per-course. All-access and Team are the only recurring plans.",
+      },
+      {
+        q: "Can I get a refund?",
+        a: "Yes — every purchase has a 30-day, no-questions-asked refund window.",
+      },
+      {
+        q: "Do prices include tax?",
+        a: "Prices are shown pre-tax. Local tax is added at checkout where applicable.",
+      },
+      {
+        q: "Can I upgrade later?",
+        a: "Yes. Anything you've already bought is credited towards an All-access upgrade.",
+      },
+    ],
+  },
+
+  teams: {
+    eyebrow: "For teams",
+    title: "Level up your entire engineering org.",
+    subtitle:
+      "The same project-based curriculum, delivered to your team with dashboards, custom learning paths, and mentor office hours.",
+    highlights: [
+      {
+        icon: "Users",
+        title: "Team dashboard",
+        body: "See progress, streaks, and skill maps for every seat in one place.",
+      },
+      {
+        icon: "ShieldCheck",
+        title: "SSO & SCIM",
+        body: "SAML, OIDC, and automated provisioning available on the Team plan.",
+      },
+      {
+        icon: "BarChart3",
+        title: "Custom paths",
+        body: "We tailor a learning path to your stack — React shop, data team, platform group.",
+      },
+      {
+        icon: "Sparkles",
+        title: "Mentor office hours",
+        body: "Weekly live sessions with senior engineers from top tech companies.",
+      },
+    ],
+    stats: [
+      { label: "Teams onboarded", value: "180+" },
+      { label: "Seats deployed", value: "4,200" },
+      { label: "Avg. completion", value: "92%" },
+      { label: "NPS", value: "72" },
+    ],
+    logos: ["Razorpay", "Zomato", "Freshworks", "Postman", "Cred", "Groww"],
+    finalCta: {
+      title: "Ready to roll it out?",
+      body: "Book a 20-minute call and we'll draft a pilot plan for your team.",
+      primary: { label: "Book a demo", href: "mailto:sales@codern.io" },
+      secondary: { label: "See pricing", href: "/pricing" },
+    },
+  },
 
   hero: {
     eyebrow: "Trusted by 250,000+ learners",
