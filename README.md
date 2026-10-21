@@ -16,17 +16,27 @@ Open http://localhost:3000.
 
 - Go to `/admin/login`
 - Email: `admin@codern.io`
-- Password: `admin123`
+- Password: the private site-admin password set by the owner.
 
-Change both in `data/siteContent.ts → admin`. See [HANDOFF.md](./HANDOFF.md) for full docs.
+The password is checked on the server using `CODERN_ADMIN_PASSWORD_HASH`.
+Set `CODERN_ADMIN_SESSION_SECRET` as well. Both are secret Vercel environment
+variables. The admin page requires a signed HttpOnly session cookie.
+The course catalogue remains the existing browser-local demo store.
 
 ## Where to edit things
 
-- **All site copy** (brand, hero, footer, nav, admin creds): `data/siteContent.ts`
+- **Site copy and public admin account label**: `data/siteContent.ts`
 - **Initial course catalogue**: `data/seedCourses.ts`
 - **Pages**: `app/page.tsx`, `app/courses/page.tsx`, `app/courses/[slug]/page.tsx`, `app/admin/*`
 - **Components**: `components/`
 
 ## Deploy
 
-Works out of the box on **Vercel** — push to GitHub, import the repo, no env vars needed.
+Deploy on **Vercel** with `CODERN_ADMIN_PASSWORD_HASH` and
+`CODERN_ADMIN_SESSION_SECRET` set as secret environment variables. The public
+storefront works without them; admin sign-in fails closed until configured.
+
+Run `npm test` for password/session checks. Privately set `CODERN_ADMIN_PASSWORD`
+and run `node scripts/verify-admin.mjs` to check the deployed sign-in, protected
+page, cookie attributes, tampered-session rejection and sign-out.
+Never put passwords, password hashes or session secrets in Git.

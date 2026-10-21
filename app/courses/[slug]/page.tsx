@@ -165,7 +165,7 @@ export default function CourseDetailPage() {
           <div className="grid gap-10 lg:grid-cols-[1fr_360px]">
             <div className="space-y-10">
               <div>
-                <h2 className="text-2xl font-bold">What you'll learn</h2>
+                <h2 className="text-2xl font-bold">What you&apos;ll learn</h2>
                 <ul className="mt-5 grid gap-3 sm:grid-cols-2">
                   {course.highlights.map((h) => (
                     <li key={h} className="flex items-start gap-2 text-sm">

@@ -291,7 +291,7 @@ export default function LandingPage() {
             <div>
               <p className="section-title-eyebrow">Featured</p>
               <h2 className="mt-3 text-4xl font-bold sm:text-5xl">
-                This month's <span className="gradient-text">most-loved</span> courses
+                This month&apos;s <span className="gradient-text">most-loved</span> courses
               </h2>
             </div>
             <Link href="/courses" className="btn-secondary">
@@ -361,7 +361,7 @@ export default function LandingPage() {
                   <figure className="card-glass lift h-full p-6">
                     <Quote className="h-6 w-6 text-brand-400" />
                     <blockquote className="mt-3 text-sm leading-relaxed text-slate-700">
-                      "{t.quote}"
+                      &quot;{t.quote}&quot;
                     </blockquote>
                     <figcaption className="mt-5 flex items-center gap-3">
                       {/* eslint-disable-next-line @next/next/no-img-element */}

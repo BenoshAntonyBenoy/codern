@@ -1,6 +1,6 @@
 // ────────────────────────────────────────────────────────────────────────────
 // SITE CONTENT — single source of truth for non-course copy.
-// Edit this file to change brand, landing page, footer, admin credentials, etc.
+// Edit this file to change brand, landing page, footer, and public account label.
 // ────────────────────────────────────────────────────────────────────────────
 
 export const siteContent = {
@@ -11,10 +11,9 @@ export const siteContent = {
       "Project-based online computer courses taught by industry mentors. Build a portfolio while you learn.",
   },
 
-  // Demo admin credentials. CHANGE THESE before any real deployment.
+  // Public account identifier only. The password hash stays on the server.
   admin: {
     email: "admin@codern.io",
-    password: "admin123",
   },
 
   nav: [

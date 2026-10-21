@@ -13,18 +13,22 @@ export default function AdminLoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState<string | null>(null);
+  const [busy, setBusy] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (
-      email.trim().toLowerCase() === siteContent.admin.email.toLowerCase() &&
-      password === siteContent.admin.password
-    ) {
+    setBusy(true); setError(null);
+    try {
+      const response = await fetch("/api/admin-session", {
+        method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, password }),
+      });
+      const result = await response.json();
+      if (!response.ok) { setError(result.error || "Sign-in failed."); return; }
       login();
-      router.push("/admin");
-    } else {
-      setError("Invalid credentials. See README for demo login.");
-    }
+      router.replace("/admin"); router.refresh();
+    } catch { setError("Could not reach sign-in. Please try again."); }
+    finally { setBusy(false); }
   };
 
   return (
@@ -89,17 +93,16 @@ export default function AdminLoginPage() {
               </div>
             )}
 
-            <button type="submit" className="btn-primary w-full">
-              Sign in
+            <button type="submit" className="btn-primary w-full" disabled={busy}>
+              {busy ? "Signing in…" : "Sign in"}
             </button>
           </form>
 
           <div className="mt-6 rounded-lg bg-slate-50 p-4 text-xs text-slate-600">
-            <p className="font-semibold text-slate-700">Demo credentials</p>
+            <p className="font-semibold text-slate-700">Admin account</p>
             <p className="mt-1 font-mono">{siteContent.admin.email}</p>
-            <p className="font-mono">{siteContent.admin.password}</p>
             <p className="mt-2 text-slate-500">
-              Change these in <code>data/siteContent.ts</code>.
+              Use your private admin password.
             </p>
           </div>
         </div>
