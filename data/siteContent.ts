@@ -25,7 +25,7 @@ export const siteContent = {
 
   pricing: {
     eyebrow: "Sample pricing",
-    title: "Pay once. Own it forever.",
+    title: "Explore example plans.",
     subtitle:
       "Illustrative plans and prices for this demo. No payment, subscription, course access or refund service is available.",
     tiers: [
@@ -80,19 +80,19 @@ export const siteContent = {
     faqs: [
       {
         q: "Do I need a subscription?",
-        a: "No. Personal plans are pay-per-course. All-access and Team are the only recurring plans.",
+        a: "No subscriptions are available. These are example plan layouts only.",
       },
       {
         q: "Can I get a refund?",
-        a: "Yes — every purchase has a 30-day, no-questions-asked refund window.",
+        a: "No purchases or refunds are processed by this demo.",
       },
       {
         q: "Do prices include tax?",
-        a: "Prices are shown pre-tax. Local tax is added at checkout where applicable.",
+        a: "Prices are illustrative. There is no real checkout or tax calculation.",
       },
       {
         q: "Can I upgrade later?",
-        a: "Yes. Anything you've already bought is credited towards an All-access upgrade.",
+        a: "No paid plans or upgrades are provided in this demo.",
       },
     ],
   },
@@ -106,22 +106,22 @@ export const siteContent = {
       {
         icon: "Users",
         title: "Team dashboard",
-        body: "See progress, streaks, and skill maps for every seat in one place.",
+        body: "Concept preview only. Progress tracking and team seats are not implemented.",
       },
       {
         icon: "ShieldCheck",
         title: "SSO & SCIM",
-        body: "SAML, OIDC, and automated provisioning available on the Team plan.",
+        body: "Proposed feature only. SSO, SCIM and team provisioning are unavailable.",
       },
       {
         icon: "BarChart3",
         title: "Custom paths",
-        body: "We tailor a learning path to your stack — React shop, data team, platform group.",
+        body: "Illustrative service idea. No custom learning plans are delivered.",
       },
       {
         icon: "Sparkles",
         title: "Mentor office hours",
-        body: "Weekly live sessions with senior engineers from top tech companies.",
+        body: "Proposed feature only. No live sessions or mentoring service is offered.",
       },
     ],
     stats: [
@@ -145,7 +145,7 @@ export const siteContent = {
     subtitle:
       "Browse sample courses and try the catalogue and cart. This prototype does not provide lessons, student accounts or certificates.",
     primaryCta: { label: "Browse all courses", href: "/courses" },
-    secondaryCta: { label: "Try a free lesson", href: "/courses" },
+    secondaryCta: { label: "Explore the catalogue", href: "/courses" },
     stats: [
       { label: "Catalogue", value: "Sample" },
       { label: "Cart storage", value: "Local" },
@@ -159,23 +159,23 @@ export const siteContent = {
   valueProps: [
     {
       icon: "Code2",
-      title: "Project-based learning",
-      body: "Every course ships you a portfolio-ready project. No tutorial-hell, no toy problems.",
+      title: "Sample course catalogue",
+      body: "Browse fictional course descriptions and compare example topics, prices and ratings.",
     },
     {
       icon: "Users",
-      title: "Industry mentors",
-      body: "Instructors are senior engineers at top tech companies — not full-time YouTubers.",
+      title: "Example instructor profiles",
+      body: "Instructor names and descriptions are sample content, with no employer affiliation claimed.",
     },
     {
       icon: "ShieldCheck",
-      title: "Verified certificates",
-      body: "Earn a certificate hiring managers actually recognize, signed against your GitHub.",
+      title: "Browser-local cart",
+      body: "Try adding and removing sample courses. No purchase or certificate is provided.",
     },
     {
       icon: "Infinity",
-      title: "Lifetime access",
-      body: "Pay once, own forever. All future updates to the course included.",
+      title: "Demo administration",
+      body: "The owner can edit course data in this browser. Edits do not publish a shared catalogue.",
     },
   ],
 
@@ -183,17 +183,17 @@ export const siteContent = {
     {
       step: "01",
       title: "Pick your track",
-      body: "Browse 120+ courses across web, data, AI, mobile, cloud, and security.",
+      body: "Browse sample course entries across web, data, AI, mobile, cloud and security.",
     },
     {
       step: "02",
-      title: "Learn by building",
-      body: "Each lesson is a checkpoint towards a real project — not a passive video.",
+      title: "Try the cart",
+      body: "Add a sample course to the browser-local cart and compare illustrative totals.",
     },
     {
       step: "03",
-      title: "Ship and get hired",
-      body: "Add your projects to your portfolio and use our hiring network for referrals.",
+      title: "Explore course details",
+      body: "Open a course page to see its sample outline. Lessons, certificates and hiring referrals are unavailable.",
     },
   ],
 
@@ -236,10 +236,8 @@ export const siteContent = {
       {
         title: "Learn",
         links: [
-          { label: "All courses", href: "/courses" },
-          { label: "Learning tracks", href: "/courses" },
-          { label: "Free lessons", href: "/courses" },
-          { label: "Certifications", href: "/courses" },
+          { label: "Sample catalogue", href: "/courses" },
+          { label: "Demo cart", href: "/cart" },
         ],
       },
       {

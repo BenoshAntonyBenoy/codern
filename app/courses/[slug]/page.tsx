@@ -80,7 +80,7 @@ export default function CourseDetailPage() {
                   <span className="font-semibold text-slate-900">
                     {course.rating}
                   </span>
-                  ({course.reviews.toLocaleString()} reviews)
+                  ({course.reviews.toLocaleString()} sample reviews)
                 </span>
                 <span className="inline-flex items-center gap-1">
                   <Clock className="h-4 w-4" /> {course.durationHours}h total
@@ -143,15 +143,15 @@ export default function CourseDetailPage() {
                 <ul className="mt-6 space-y-2 text-sm text-slate-600">
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="h-4 w-4 text-emerald-600" />
-                    Lifetime access
+                    Sample outline — no lesson access
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="h-4 w-4 text-emerald-600" />
-                    Certificate of completion
+                    Certificates unavailable in this demo
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="h-4 w-4 text-emerald-600" />
-                    30-day money-back guarantee
+                    Demo only — no payment or refund service
                   </li>
                 </ul>
               </div>

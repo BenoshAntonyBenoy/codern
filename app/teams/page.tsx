@@ -165,7 +165,7 @@ export default function TeamsPage() {
         <AnimatedBackground variant="soft" />
         <div className="container-page py-20">
           <Reveal className="mx-auto max-w-2xl text-center">
-            <p className="section-title-eyebrow">What you get</p>
+            <p className="section-title-eyebrow">Proposed features — unavailable</p>
             <h2 className="mt-3 text-4xl font-bold sm:text-5xl">
               Everything a{" "}
               <span className="gradient-text">learning-and-development</span>{" "}

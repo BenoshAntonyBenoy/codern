@@ -144,7 +144,7 @@ export default function LandingPage() {
                       <CheckCircle2 className="h-5 w-5" />
                     </div>
                     <div>
-                      <p className="text-sm font-semibold">Project shipped</p>
+                      <p className="text-sm font-semibold">Example progress card</p>
                       <p className="text-xs text-slate-500">
                         Day 14 — React track
                       </p>
@@ -165,10 +165,10 @@ export default function LandingPage() {
                       <Star className="h-4 w-4 fill-current" />
                     </div>
                     <p className="mt-1 text-xs font-semibold text-slate-900">
-                      4.8 average
+                      Sample ratings
                     </p>
                     <p className="text-[11px] text-slate-500">
-                      from 84k reviews
+                      Fictional review counts
                     </p>
                   </div>
                 </Reveal>
@@ -204,11 +204,10 @@ export default function LandingPage() {
           <Reveal className="mx-auto max-w-2xl text-center">
             <p className="section-title-eyebrow">Why us</p>
             <h2 className="mt-3 text-4xl font-bold sm:text-5xl">
-              Built by engineers, <span className="gradient-text">for engineers</span>
+              Explore the <span className="gradient-text">storefront demo</span>
             </h2>
             <p className="mt-4 text-slate-600">
-              Project-first, mentor-led, and verified — the way technical
-              learning should feel.
+              Catalogue browsing, sample course pages and a browser-local cart.
             </p>
           </Reveal>
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -291,7 +290,7 @@ export default function LandingPage() {
             <div>
               <p className="section-title-eyebrow">Featured</p>
               <h2 className="mt-3 text-4xl font-bold sm:text-5xl">
-                This month&apos;s <span className="gradient-text">most-loved</span> courses
+                Featured <span className="gradient-text">sample</span> courses
               </h2>
             </div>
             <Link href="/courses" className="btn-secondary">
@@ -315,11 +314,11 @@ export default function LandingPage() {
           <Reveal className="mx-auto max-w-2xl text-center">
             <p className="section-title-eyebrow">How it works</p>
             <h2 className="mt-3 text-4xl font-bold sm:text-5xl">
-              From sign-up to your{" "}
-              <span className="gradient-text">first portfolio piece</span>
+              Explore the{" "}
+              <span className="gradient-text">storefront features</span>
             </h2>
             <p className="mt-4 text-slate-600">
-              Three steps. No fluff.
+              Browse, compare and try the demo cart.
             </p>
           </Reveal>
           <div className="mt-16 grid gap-6 md:grid-cols-3">

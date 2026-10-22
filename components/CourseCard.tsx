@@ -60,7 +60,7 @@ export default function CourseCard({ course }: { course: Course }) {
                 {course.rating}
               </span>
               <span className="text-slate-500">
-                ({course.reviews.toLocaleString()})
+                ({course.reviews.toLocaleString()} sample)
               </span>
             </div>
             <div className="text-right">
