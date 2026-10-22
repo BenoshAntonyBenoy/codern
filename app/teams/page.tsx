@@ -145,7 +145,7 @@ export default function TeamsPage() {
       <section className="border-y border-slate-200/70 bg-white/70 backdrop-blur">
         <div className="container-page py-8">
           <p className="text-center text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-500">
-            Trusted by engineering teams at
+            Illustrative company names — no affiliation
           </p>
           <div className="mt-5 flex flex-wrap items-center justify-center gap-x-12 gap-y-3">
             {t.logos.map((logo) => (

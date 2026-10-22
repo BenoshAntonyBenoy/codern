@@ -21,6 +21,11 @@ export default function Navbar() {
   }, []);
 
   return (
+    <>
+    <aside className="border-b border-amber-200 bg-amber-50 px-4 py-3 text-center text-sm text-amber-950" aria-label="Demo information">
+      <strong>Course storefront demo.</strong> Courses, prices, reviews, testimonials and company names are sample content.
+      Student accounts, purchases, certificates and team services are unavailable. Cart and course edits stay in this browser.
+    </aside>
     <header
       className={cn(
         "sticky top-0 z-40 transition-all",
@@ -73,7 +78,7 @@ export default function Navbar() {
             </Link>
           ) : (
             <Link href="/admin/login" className="btn-ghost text-sm">
-              Sign in
+              Admin sign-in
             </Link>
           )}
           <Link href="/courses" className="btn-primary text-sm">
@@ -124,7 +129,7 @@ export default function Navbar() {
                 </Link>
               ) : (
                 <Link href="/admin/login" className="btn-secondary flex-1">
-                  Sign in
+                  Admin sign-in
                 </Link>
               )}
               <Link href="/courses" className="btn-primary flex-1">
@@ -135,5 +140,6 @@ export default function Navbar() {
         </div>
       )}
     </header>
+    </>
   );
 }

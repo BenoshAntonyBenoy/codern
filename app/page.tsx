@@ -182,7 +182,7 @@ export default function LandingPage() {
       <section className="relative border-y border-slate-200/70 bg-white/70 backdrop-blur">
         <div className="container-page py-10">
           <p className="text-center text-[11px] font-semibold uppercase tracking-[0.18em] shimmer-text">
-            Graduates working at
+            Illustrative company names — no affiliation
           </p>
           <div className="mt-6 flex flex-wrap items-center justify-center gap-x-12 gap-y-4">
             {siteContent.partnerLogos.map((logo) => (
@@ -348,10 +348,10 @@ export default function LandingPage() {
         <AnimatedBackground variant="soft" />
         <div className="container-page py-24">
           <Reveal className="mx-auto max-w-2xl text-center">
-            <p className="section-title-eyebrow">Wall of love</p>
+            <p className="section-title-eyebrow">Fictional sample testimonials</p>
             <h2 className="mt-3 text-4xl font-bold sm:text-5xl">
-              250,000+ learners,{" "}
-              <span className="gradient-text">real outcomes</span>
+              A preview of{" "}
+              <span className="gradient-text">learner stories</span>
             </h2>
           </Reveal>
           <div className="mt-14 grid gap-6 md:grid-cols-3">

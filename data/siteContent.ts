@@ -6,9 +6,9 @@
 export const siteContent = {
   brand: {
     name: "Codern",
-    tagline: "Master in-demand tech skills",
+    tagline: "Course storefront demo",
     description:
-      "Project-based online computer courses taught by industry mentors. Build a portfolio while you learn.",
+      "An interactive course storefront demo with a sample catalogue and browser-local cart. No courses or subscriptions are sold here.",
   },
 
   // Public account identifier only. The password hash stays on the server.
@@ -24,10 +24,10 @@ export const siteContent = {
   ],
 
   pricing: {
-    eyebrow: "Pricing",
+    eyebrow: "Sample pricing",
     title: "Pay once. Own it forever.",
     subtitle:
-      "No subscriptions. No hidden fees. Every plan gets lifetime access and free updates.",
+      "Illustrative plans and prices for this demo. No payment, subscription, course access or refund service is available.",
     tiers: [
       {
         name: "Personal",
@@ -98,10 +98,10 @@ export const siteContent = {
   },
 
   teams: {
-    eyebrow: "For teams",
+    eyebrow: "Team service concept",
     title: "Level up your entire engineering org.",
     subtitle:
-      "The same project-based curriculum, delivered to your team with dashboards, custom learning paths, and mentor office hours.",
+      "A preview of a possible team learning service. Dashboard figures, features and companies below are illustrative; this service is not available.",
     highlights: [
       {
         icon: "Users",
@@ -125,32 +125,32 @@ export const siteContent = {
       },
     ],
     stats: [
-      { label: "Teams onboarded", value: "180+" },
-      { label: "Seats deployed", value: "4,200" },
-      { label: "Avg. completion", value: "92%" },
-      { label: "NPS", value: "72" },
+      { label: "Example teams", value: "180+" },
+      { label: "Example seats", value: "4,200" },
+      { label: "Example completion", value: "92%" },
+      { label: "Example NPS", value: "72" },
     ],
     logos: ["Razorpay", "Zomato", "Freshworks", "Postman", "Cred", "Groww"],
     finalCta: {
-      title: "Ready to roll it out?",
-      body: "Book a 20-minute call and we'll draft a pilot plan for your team.",
-      primary: { label: "Book a demo", href: "mailto:sales@codern.io" },
+      title: "Explore the sample catalogue",
+      body: "This is a service concept. Team onboarding and sales appointments are not available.",
+      primary: { label: "Browse sample courses", href: "/courses" },
       secondary: { label: "See pricing", href: "/pricing" },
     },
   },
 
   hero: {
-    eyebrow: "Trusted by 250,000+ learners",
+    eyebrow: "Interactive course storefront demo",
     title: "Build a tech career one project at a time.",
     subtitle:
-      "Hands-on computer courses from absolute beginner to senior engineer. Pick a track, ship real projects, get a verified certificate.",
+      "Browse sample courses and try the catalogue and cart. This prototype does not provide lessons, student accounts or certificates.",
     primaryCta: { label: "Browse all courses", href: "/courses" },
     secondaryCta: { label: "Try a free lesson", href: "/courses" },
     stats: [
-      { label: "Courses", value: "120+" },
-      { label: "Hours of content", value: "4,800" },
-      { label: "Active learners", value: "250k" },
-      { label: "Avg. course rating", value: "4.8 / 5" },
+      { label: "Catalogue", value: "Sample" },
+      { label: "Cart storage", value: "Local" },
+      { label: "Student accounts", value: "Off" },
+      { label: "Payments", value: "Off" },
     ],
   },
 
@@ -202,7 +202,7 @@ export const siteContent = {
       quote:
         "I went from QA tester to a frontend role in 4 months. The React track is the most practical course I've taken.",
       name: "Aanya Krishnan",
-      role: "Frontend Engineer at Razorpay",
+      role: "Fictional frontend learner",
       avatar:
         "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=160&h=160&fit=crop&crop=face",
     },
@@ -210,7 +210,7 @@ export const siteContent = {
       quote:
         "The Python for Data Science course is hands-down the clearest explanation of pandas I've found anywhere.",
       name: "Marcus Wei",
-      role: "Data Analyst at Atlassian",
+      role: "Fictional data learner",
       avatar:
         "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=160&h=160&fit=crop&crop=face",
     },
@@ -218,7 +218,7 @@ export const siteContent = {
       quote:
         "Mentor feedback on my capstone was the difference between a tutorial project and a portfolio piece.",
       name: "Priya Menon",
-      role: "Backend Engineer at Stripe",
+      role: "Fictional backend learner",
       avatar:
         "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=160&h=160&fit=crop&crop=face",
     },
@@ -226,7 +226,7 @@ export const siteContent = {
 
   finalCta: {
     title: "Ready to start building?",
-    body: "Join 250,000 learners shipping real projects every week. No subscription — pay once per course.",
+    body: "Explore the sample catalogue. No payment, enrolment or course access is provided in this demo.",
     primary: { label: "Browse courses", href: "/courses" },
     secondary: { label: "Sign in as admin", href: "/admin/login" },
   },
@@ -243,34 +243,21 @@ export const siteContent = {
         ],
       },
       {
-        title: "Company",
+        title: "Explore the demo",
         links: [
-          { label: "About", href: "/" },
-          { label: "Mentors", href: "/" },
-          { label: "Careers", href: "/" },
-          { label: "Press", href: "/" },
+          { label: "Team service concept", href: "/teams" },
+          { label: "Sample pricing", href: "/pricing" },
         ],
       },
       {
-        title: "Resources",
+        title: "Project",
         links: [
-          { label: "Blog", href: "/" },
-          { label: "Help center", href: "/" },
-          { label: "Community", href: "/" },
-          { label: "Contact", href: "/" },
-        ],
-      },
-      {
-        title: "Legal",
-        links: [
-          { label: "Terms", href: "/" },
-          { label: "Privacy", href: "/" },
-          { label: "Cookies", href: "/" },
-          { label: "Refunds", href: "/" },
+          { label: "Source on GitHub", href: "https://github.com/BenoshAntonyBenoy/codern" },
+          { label: "Admin sign-in", href: "/admin/login" },
         ],
       },
     ],
-    bottom: "© 2026 Codecourse. All rights reserved.",
+    bottom: "© 2026 Codern. A portfolio demo with fictional course and business content.",
   },
 };
 

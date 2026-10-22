@@ -169,7 +169,7 @@ export default function CartPage() {
                   )}
                   <div className="flex justify-between">
                     <dt className="text-slate-600">Tax</dt>
-                    <dd className="text-slate-500">Calculated at checkout</dd>
+                    <dd className="text-slate-500">Demo — no charges</dd>
                   </div>
                   <div className="my-3 border-t border-slate-200" />
                   <div className="flex items-baseline justify-between">
@@ -183,20 +183,20 @@ export default function CartPage() {
                   className="btn-primary mt-6 w-full"
                   onClick={() =>
                     alert(
-                      "Demo only — checkout isn't wired up. Plug in Stripe / Razorpay in lib/ for real payments."
+                      "This is a demo cart. No payment is taken and no course is purchased."
                     )
                   }
                 >
-                  Checkout <ArrowRight className="h-4 w-4" />
+                  Preview demo checkout <ArrowRight className="h-4 w-4" />
                 </button>
                 <ul className="mt-5 space-y-2 text-xs text-slate-600">
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="h-3.5 w-3.5 text-emerald-600" />
-                    Lifetime access on every course
+                    Sample courses only; no access is granted
                   </li>
                   <li className="flex items-center gap-2">
                     <ShieldCheck className="h-3.5 w-3.5 text-emerald-600" />
-                    30-day money-back guarantee
+                    No payments or refunds are processed
                   </li>
                 </ul>
               </aside>

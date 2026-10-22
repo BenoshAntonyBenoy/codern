@@ -22,6 +22,8 @@ The password is checked on the server using `CODERN_ADMIN_PASSWORD_HASH`.
 Set `CODERN_ADMIN_SESSION_SECRET` as well. Both are secret Vercel environment
 variables. The admin page requires a signed HttpOnly session cookie.
 The course catalogue remains the existing browser-local demo store.
+Public pages label fictional course/business content and unavailable services.
+Student accounts, payments and certificates are not implemented.
 
 ## Where to edit things
 
